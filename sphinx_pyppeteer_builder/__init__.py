@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+from os import path
 from copy import deepcopy
 
 from .pyppeteer_builder import PyppeteerPDFBuilder
@@ -107,6 +108,7 @@ def setup(app: Sphinx) -> Dict[str, Any]:
         '',
         'pyppeteer'
     )
+
 
     return {
         'version': version,
